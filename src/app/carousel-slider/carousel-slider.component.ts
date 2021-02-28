@@ -9,59 +9,60 @@ export class CarouselSliderComponent implements OnInit {
   slideConfig: any;
   slides = [
     {
-      title: `Mobile internet`,
-      index: 0
+      title: `Mobile internet`
     },
     {
-      title: `Home internet`,
-      index: 1
+      title: `Home internet`
     },
     {
-      title: `Get a device`,
-      index: 2
+      title: `Get a device`
     },
     {
-      title: `Add a phone-line`,
-      index: 3
+      title: `Add a phone-line`
     },
     {
-      title: `Upgrade`,
-      index: 4
+      title: `Upgrade`
     }
   ];
-  currnetSlideIndex: any;
+  currnetSlideIndex: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.currnetSlideIndex = 0;
     this.slideConfig = {
       centerMode: true,
-      centerPadding: '60px',
       slidesToShow: 3,
-      speed: 2000,
+      speed: 500,
       arrows: false,
       accessibility: false,
       responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            slidesToShow: 3,
+            speed: 500,
+            accessibility: false,
+          }
+        },
         {
           breakpoint: 768,
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3,
-            speed: 2000,
+            slidesToShow: 1,
+            speed: 500,
             accessibility: false,
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 400,
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '40px',
             slidesToShow: 1,
-            speed: 2000,
+            speed: 500,
             accessibility: false,
           }
         }
@@ -69,6 +70,9 @@ export class CarouselSliderComponent implements OnInit {
     }
   }
 
+  /*
+  * Track current slide index
+  * */
   beforeChangeEvent(event) {
     this.currnetSlideIndex = event.nextSlide;
   }
