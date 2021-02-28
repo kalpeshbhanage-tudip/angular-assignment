@@ -8,7 +8,9 @@
   font-weight: 400;
 
   .slider {
-    width: 75rem;
+    width: 80rem;
+    background: #E7F5F6;
+    position: relative;
   }
 
   .slick-container {
@@ -22,7 +24,6 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #E7F5F6;
 
     .tiles {
       background: #FAFAFA;
@@ -43,19 +44,51 @@
           height: 80px;
         }
       }
-      .label {
-        padding-top: 20%;
-        text-align: center;
+      .label-container {
+        width: 100%;
+        height: 50%;
+        position: relative;
+
+        .label {
+          padding-top: 20%;
+          text-align: center;
+        }
+
+        .bottom-line {
+          height: 8px;
+          background: #FFC13C;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        .start-btn {
+          padding-top: 12%;
+          font-size: 14px;
+          text-align: center;
+
+          .start-btn-logo {
+            padding-left: 10px;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
 
-  .tile-footer {
-    height: 100%;
-
-    .bottom-line {
-      height: 5px;
-      background: #FFC13C;
-    }
+  .icon {
+    cursor: pointer;
+  }
+  .left-arrow-btn {
+    left: 0;
+    margin-left: 16rem;
+    margin-top: 14rem;
+    position: absolute;
+  }
+  .right-arrow-btn {
+    right: 0;
+    margin-right: 16rem;
+    margin-top: 14rem;
+    position: absolute;
   }
 }

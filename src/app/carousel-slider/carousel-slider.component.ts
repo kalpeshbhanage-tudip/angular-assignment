@@ -39,7 +39,9 @@ export class CarouselSliderComponent implements OnInit {
       centerMode: true,
       centerPadding: '60px',
       slidesToShow: 3,
-      speed:1500,
+      speed: 2000,
+      arrows: false,
+      accessibility: false,
       responsive: [
         {
           breakpoint: 768,
@@ -47,7 +49,9 @@ export class CarouselSliderComponent implements OnInit {
             arrows: false,
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 3
+            slidesToShow: 3,
+            speed: 2000,
+            accessibility: false,
           }
         },
         {
@@ -56,7 +60,9 @@ export class CarouselSliderComponent implements OnInit {
             arrows: false,
             centerMode: true,
             centerPadding: '40px',
-            slidesToShow: 1
+            slidesToShow: 1,
+            speed: 2000,
+            accessibility: false,
           }
         }
       ]
