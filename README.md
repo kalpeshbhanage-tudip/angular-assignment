@@ -1,27 +1,59 @@
-# InvestecAssignment
+# This is a Angular Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
+You have to Perform all the following steps in the given sequence for Installing this project.
 
-## Development server
+**Install Nodejs**
+- Ubuntu Machine
+```
+        $ sudo apt-get install nodejs-legacy
+```
+- Mac Machine
+```
+        $ brew install nodejs
+```
+Verify this by using `node -v` and `npm -v`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Install Angular CLI**
+- Ubuntu Machine
+```
+        npm install -g @angular/cli
+```
+The app will automatically create *node-express-stack* database and *users* collection.
 
-## Code scaffolding
+- Mac Machine
+```
+        npm install -g @angular/cli
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Step 1: Add NodeJs PPA. First you need to node.js ppa in our system provide by nodejs official website.
+Step 2: Install Node.js and NPM. After adding required PPA file, lets install Nodejs package.
+```
+	$ sudo apt-get update
+	$ sudo apt-get install nodejs
+	$ sudo apt-get install npm
+```
 
-## Build
+Step 3: Check Node.js and NPM Version
+```
+	$ node --version
+	$ npm --version
+```
+Step 4: Install Angular CLI
+```
+	npm install -g @angular/cli
+```
+Step 5: Install node dependencies
+```
+         $ npm install
+```
+Step 6: To start project use following command.
+```
+         $ npm start or $ ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To update Angular CLI to a new version, you must update both the global package and your project's local package.
+```
+	    npm uninstall -g @angular/cli
+            npm cache clean
+            npm install -g @angular/cli@latest
+```

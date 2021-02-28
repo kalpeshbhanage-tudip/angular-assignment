@@ -1,0 +1,23 @@
+<div class="content-container">
+  <ngx-slick-carousel class="carousel slider"
+                      #slickModal="slick-carousel"
+                      [config]="slideConfig"
+                      (beforeChange)="beforeChangeEvent($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <div class="card-box">
+        <div class="tiles">
+          <div class="image-contaier">
+            <img src="assets/images/cross-image.png">
+          </div>
+          <div class="label">
+            {{slide.title}}
+          </div>
+          <div class="tile-footer">
+            <div [ngClass]="{ 'bottom-line': slide.index === currnetSlideIndex }">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ngx-slick-carousel>
+</div>

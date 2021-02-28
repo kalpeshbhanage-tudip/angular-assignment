@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CarouselSliderComponent } from './carousel-slider/carousel-slider.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselSliderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

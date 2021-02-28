@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.slick-center {
+  .tiles {
+    height: 70% !important;
+    width: 96% !important;
+    font-size: 30px;
+    font-weight: 600;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4) !important;
+
+    .image-contaier {
+      img {
+        width: 150px !important;
+        height: 150px !important;
+      }
+    }
+  }
+}
