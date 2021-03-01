@@ -5,7 +5,7 @@ You have to Perform all the following steps in the given sequence for Installing
 **Install Nodejs**
 - Ubuntu Machine
 ```
-        $ sudo apt-get install nodejs-legacy
+        $ sudo apt install nodejs
 ```
 - Mac Machine
 ```
