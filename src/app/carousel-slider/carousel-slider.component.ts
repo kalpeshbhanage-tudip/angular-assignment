@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Islide } from "./islide";
+import { Slide } from "./slide.interface";
 
 @Component({
   selector: 'app-carousel-slider',
@@ -9,7 +9,7 @@ import { Islide } from "./islide";
 
 export class CarouselSliderComponent implements OnInit {
   slideConfig: any;
-  slides: Islide[] = [
+  slides: Slide[] = [
     {
       title: `Mobile internet`
     },
