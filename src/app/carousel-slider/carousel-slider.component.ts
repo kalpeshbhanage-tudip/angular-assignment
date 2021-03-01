@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Islide } from "./islide";
 
 @Component({
   selector: 'app-carousel-slider',
   templateUrl: './carousel-slider.component.html',
   styleUrls: ['./carousel-slider.component.scss']
 })
+
 export class CarouselSliderComponent implements OnInit {
   slideConfig: any;
-  slides = [
+  slides: Islide[] = [
     {
       title: `Mobile internet`
     },
