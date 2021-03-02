@@ -31,45 +31,47 @@ export class CarouselSliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.slideConfig = {
-      centerMode: true,
-      slidesToShow: 3,
-      speed: 500,
-      arrows: false,
-      accessibility: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            slidesToShow: 3,
-            speed: 500,
-            accessibility: false,
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            slidesToShow: 1,
-            speed: 500,
-            accessibility: false,
-          }
-        },
-        {
-          breakpoint: 400,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            slidesToShow: 1,
-            speed: 500,
-            accessibility: false,
-          }
-        }
-      ]
-    }
+   this.slideConfig = {
+     centerMode: true,
+     slidesToShow: 4.39,
+     arrows: false,
+     draggable: true,
+     dots: false,
+     swipeToSlide: true,
+     accessibility: false,
+     responsive: [
+       {
+         breakpoint: 1024,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           slidesToShow: 3,
+           speed: 500,
+           accessibility: false,
+         }
+       },
+       {
+         breakpoint: 768,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           slidesToShow: 1,
+           speed: 500,
+           accessibility: false,
+         }
+       },
+       {
+         breakpoint: 400,
+         settings: {
+           arrows: false,
+           centerMode: true,
+           slidesToShow: 1,
+           speed: 500,
+           accessibility: false,
+         }
+       }
+     ]
+   }
   }
 
   /*

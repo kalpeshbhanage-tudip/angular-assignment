@@ -1,28 +1,73 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-/*Active slide CSS*/
-.slick-current {
-  .tiles {
-    height: 70% !important;
-    width: 96% !important;
-    font-size: 2rem;
-    font-weight: 600;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4) !important;
+/****Active Slide CSS****/
+.slick-slider {
+  width: 100% !important;
+  background-color: transparent;
+  .slick-track {
+    display: flex;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    height: 100vh;
+    justify-content: center;
+  }
+  .slick-slide{
+    float: none;
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 5px;
+    background-color: white;
+    transition: all 0.3s ease;
+    height: auto;
+    text-align: center;
+    &.slick-current,
+    &.slick-center {
+      padding: 0px !important;
+      width: 450px !important;
 
-    .image-contaier {
-      img {
-        width: 10rem !important;
-        height: 10rem !important;
+      .card-box {
+        height: 550px !important;
+        padding: 5px 8px !important;
+
+        .tiles {
+          font-size: 2rem;
+          font-weight: 600;
+          overflow: hidden;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19) !important;
+          border-radius: 20px !important;
+
+          .image-contaier {
+            padding-top: 0px !important;
+            padding-bottom: 2rem !important;
+
+            img {
+              width: 10rem !important;
+              height: 10rem !important;
+            }
+          }
+
+          .bottom-line {
+            visibility: visible !important;
+          }
+          .start-btn {
+            visibility: visible !important;
+          }
+        }
       }
-    }
-
-    .bottom-line {
-      visibility: visible !important;
-    }
-    .start-btn {
-      visibility: visible !important;
     }
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .slick-slider {
+    .slick-slide{
+      &.slick-current,
+      &.slick-center {
+        width: 350px !important;
+        .card-box {
+          height: 450px !important;
+        }
+      }
+    }
+  }
+}
