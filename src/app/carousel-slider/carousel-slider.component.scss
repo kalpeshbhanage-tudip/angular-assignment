@@ -1,5 +1,5 @@
 .content-container {
-  background: #E7F5F6;
+  background-image: repeating-linear-gradient(90deg, #E7F5F6, #E7F5F6 80px, #D5EAEC 30px, #D5EAEC 100px);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@
   margin: 0px;
 
   .card-box {
-    background: #E7F5F6;
+    background: transparent;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -67,6 +67,10 @@
 
   .icon {
     cursor: pointer;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
   .left-arrow-btn {
     left: 0;
@@ -81,12 +85,16 @@
     position: absolute;
   }
   .title-container {
+    font-family: 'Open-sans-light', 'arial', sans-serif;
     top: 0;
     position: absolute;
     left: 0;
-    margin-left: 14%;
+    margin-left: 14.5%;
     margin-top: 7%;
     font-size: 1.8rem;
+    .sub-title {
+      font-family: Arial, Helvetica, sans-serif;
+    }
   }
 }
 

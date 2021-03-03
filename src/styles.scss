@@ -12,6 +12,7 @@
     justify-content: center;
   }
   .slick-slide{
+    background: transparent !important;
     float: none;
     display: inline-block !important;
     vertical-align: middle;
@@ -30,6 +31,7 @@
         padding: 5px 8px !important;
 
         .tiles {
+          border-bottom: 8px solid #FFC13C;
           font-size: 2rem;
           font-weight: 600;
           overflow: hidden;
