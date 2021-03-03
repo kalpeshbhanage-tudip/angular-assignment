@@ -71,13 +71,13 @@
   .left-arrow-btn {
     left: 0;
     margin-left: 22%;
-    margin-top: 16%;
+    bottom: 17%;
     position: absolute;
   }
   .right-arrow-btn {
     right: 0;
     margin-right: 22%;
-    margin-top: 16%;
+    bottom: 17%;
     position: absolute;
   }
   .title-container {
@@ -97,12 +97,12 @@
   }
   .left-arrow-btn {
     margin-top: 0px !important;
-    margin-bottom: 12% !important;
-    bottom: 0;
+    margin-bottom: 9% !important;
+    bottom: 0 !important;
   }
   .right-arrow-btn {
     margin-top: 0px !important;
-    margin-bottom: 12% !important;
-    bottom: 0;
+    margin-bottom: 9% !important;
+    bottom: 0 !important;
   }
 }

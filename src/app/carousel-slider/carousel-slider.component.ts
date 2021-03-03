@@ -34,6 +34,7 @@ export class CarouselSliderComponent implements OnInit {
    this.slideConfig = {
      centerMode: true,
      slidesToShow: 4.39,
+     speed: 500,
      arrows: false,
      draggable: true,
      dots: false,
