@@ -28,7 +28,7 @@ The app will automatically create *node-express-stack* database and *users* coll
 First take project clone by using below command:
 
 ```
-  $ git clone https://github.com/kalpeshbhanage-tudip/investec-angular-assignment.git
+  $ git clone https://github.com/kalpeshbhanage-tudip/angular-assignment.git
 ```
 
 Step 1: Add NodeJs PPA. First you need to node.js ppa in our system provide by nodejs official website.
